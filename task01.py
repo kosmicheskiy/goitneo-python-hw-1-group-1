@@ -35,8 +35,8 @@ def get_birthdays_per_week(users):
                 result[week_day].append(name)
 
         
-    for key, values in result.items():
-        print(f"{key}: {values}")             
+    for day, names in result.items():
+        print(f"{day}: {names}")             
 
 
 get_birthdays_per_week(users=users)
